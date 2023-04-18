@@ -1,0 +1,36 @@
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.hover\:bg-gray-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+.transition\:duration-500 {
+  transition-duration: 500ms;
+}
+
+.transform\:rotate-0 {
+  --tw-rotate: 0deg;
+  transform: rotate(var(--tw-rotate));
+}
+
+.transform\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: rotate(var(--tw-rotate));
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
