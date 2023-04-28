@@ -3,14 +3,18 @@ export interface ZustandState {
   isFilterChatActive: boolean;
   showPupupMenu: boolean;
   isNewChatActive: boolean;
+  isKomunitasActive: boolean;
+  isProfileActive: boolean;
 }
 
 export interface ZustandAction {
-  setIsSearchActive: (data: boolean) => void;
+  setIsSearchActive: () => void;
   setIsFilterChatActive: () => void;
   setShowPopupMenu: () => void;
   setClosePopupMenu: () => void;
   setIsNewChatActive: (data: boolean) => void;
+  setIsKomunitasActive: (data: boolean) => void;
+  setIsProfileActive: (data: boolean) => void;
 }
 
 export interface ZustandStore extends ZustandState, ZustandAction {}

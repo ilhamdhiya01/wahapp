@@ -1,4 +1,3 @@
-import React from 'react';
 import { useZustandStore } from '../../../../store/zustand';
 
 export const PopupMenu = () => {
